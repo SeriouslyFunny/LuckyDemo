@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E45AF381F220EE800865D21 /* HSFLuckyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E45AF371F220EE800865D21 /* HSFLuckyView.m */; };
 		2EFA1B391F20A6C5002209AB /* HSFLuckyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA1B381F20A6C5002209AB /* HSFLuckyItem.m */; };
 		2EFF38D21F0A55CB0050C813 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF38D11F0A55CB0050C813 /* main.m */; };
 		2EFF38D51F0A55CB0050C813 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF38D41F0A55CB0050C813 /* AppDelegate.m */; };
@@ -14,10 +15,11 @@
 		2EFF38DB1F0A55CB0050C813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFF38D91F0A55CB0050C813 /* Main.storyboard */; };
 		2EFF38DD1F0A55CB0050C813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EFF38DC1F0A55CB0050C813 /* Assets.xcassets */; };
 		2EFF38E01F0A55CB0050C813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFF38DE1F0A55CB0050C813 /* LaunchScreen.storyboard */; };
-		2EFF38E91F0A55F00050C813 /* HSFLuckyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF38E81F0A55F00050C813 /* HSFLuckyView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E45AF361F220EE800865D21 /* HSFLuckyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFLuckyView.h; sourceTree = "<group>"; };
+		2E45AF371F220EE800865D21 /* HSFLuckyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFLuckyView.m; sourceTree = "<group>"; };
 		2EFA1B371F20A6C5002209AB /* HSFLuckyItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFLuckyItem.h; sourceTree = "<group>"; };
 		2EFA1B381F20A6C5002209AB /* HSFLuckyItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFLuckyItem.m; sourceTree = "<group>"; };
 		2EFF38CD1F0A55CB0050C813 /* LuckyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,8 +32,6 @@
 		2EFF38DC1F0A55CB0050C813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EFF38DF1F0A55CB0050C813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EFF38E11F0A55CB0050C813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EFF38E71F0A55F00050C813 /* HSFLuckyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFLuckyView.h; sourceTree = "<group>"; };
-		2EFF38E81F0A55F00050C813 /* HSFLuckyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFLuckyView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 		2EFF38CF1F0A55CB0050C813 /* LuckyDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2EFF38E71F0A55F00050C813 /* HSFLuckyView.h */,
-				2EFF38E81F0A55F00050C813 /* HSFLuckyView.m */,
+				2E45AF361F220EE800865D21 /* HSFLuckyView.h */,
+				2E45AF371F220EE800865D21 /* HSFLuckyView.m */,
 				2EFA1B371F20A6C5002209AB /* HSFLuckyItem.h */,
 				2EFA1B381F20A6C5002209AB /* HSFLuckyItem.m */,
 				2EFF38D31F0A55CB0050C813 /* AppDelegate.h */,
@@ -161,9 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E45AF381F220EE800865D21 /* HSFLuckyView.m in Sources */,
 				2EFA1B391F20A6C5002209AB /* HSFLuckyItem.m in Sources */,
 				2EFF38D81F0A55CB0050C813 /* ViewController.m in Sources */,
-				2EFF38E91F0A55F00050C813 /* HSFLuckyView.m in Sources */,
 				2EFF38D51F0A55CB0050C813 /* AppDelegate.m in Sources */,
 				2EFF38D21F0A55CB0050C813 /* main.m in Sources */,
 			);

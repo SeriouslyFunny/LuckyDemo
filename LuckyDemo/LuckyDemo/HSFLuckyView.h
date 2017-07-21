@@ -13,6 +13,15 @@ typedef NS_ENUM(NSInteger, HSFDirection) {
     HSFDirection_acw//逆时针
 };
 
+@class HSFLuckyView;
+@protocol HSFLuckyViewDelegate <NSObject>
+
+@optional
+
+-(void)didClickStartBtn:(HSFLuckyView *)luckyView startBtn:(UIButton *)sender;
+
+@end
+
 @interface HSFLuckyView : UIView
 
 /* 自定义 */
@@ -24,6 +33,7 @@ typedef NS_ENUM(NSInteger, HSFDirection) {
 @property (nonatomic,strong) UIView *maskView;//滚动的view
 @property (nonatomic,assign) HSFDirection direction;//方向：顺时针/逆时针
 @property (nonatomic,strong) NSString *stopIndex;//可以自定义抽奖结果(from 0 ~ imgViewArr.count)
+@property (nonatomic,assign) id<HSFLuckyViewDelegate> delegate;
 
 
 #pragma mark -配置

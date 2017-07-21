@@ -131,6 +131,10 @@
     self.isRunning = YES;
     
     self.timer = [NSTimer scheduledTimerWithTimeInterval:self.intervalTime target:self selector:@selector(startLotterry:) userInfo:nil repeats:NO];
+    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+    if ([self.delegate respondsToSelector:@selector(didClickStartBtn:startBtn:)]) {
+        [self.delegate didClickStartBtn:self startBtn:self.startBtn];
+    }
 }
 
 #pragma mark -停止
@@ -159,6 +163,7 @@
     
     if (self.isRunning) {
         self.timer = [NSTimer scheduledTimerWithTimeInterval:self.intervalTime target:self selector:@selector(startLotterry:) userInfo:nil repeats:NO];
+        [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     }else{
         if (self.stopIndex) {
             if (index == [self.stopIndex integerValue]) {
@@ -166,6 +171,7 @@
                 self.startBtn.userInteractionEnabled = YES;
             }else{
                 self.timer = [NSTimer scheduledTimerWithTimeInterval:self.intervalTime target:self selector:@selector(startLotterry:) userInfo:nil repeats:NO];
+                [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
             }
         }else{
             //停止
